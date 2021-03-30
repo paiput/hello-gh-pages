@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Conversor de temperaturas</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">
+            Conversor de temperaturas
+        </h1>
+        <p class="header__text">
+            Ingrese la temperatura en grados Celcius
+        </p>
+    </header>
+
+    <main class="main">
+        <div class="main__inp-container">
+            <input type="number" id="temperature-c" class="input-container__input">
+            <input type="submit" id="submit-temperature" class="input-container__input" value="Convertir">
+        </div>
+        <p class="error hidden">
+            Error, por favor ingrese la temperatura en grados celcius
+        </p>
+        <p class="main__output-temperature--fahrenheit main__output">
+            <span class="main__text">En grados Fahrenheit:</span><span class="output-temperature--fahrenheit__num"> </span>
+        </p>
+        <p class="main__output-temperature--kelvin main__output">
+            <span class="main__text">En grados Kelvin:</span><span class="output-temperature--kelvin__num"> </span>
+        </p>
+    </main>
+
+    <footer class="footer">
+        <a href="https://github.com/paiput" class="footer__link" target="blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
